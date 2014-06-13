@@ -229,4 +229,8 @@ public class HazelcastCache<A> implements Cache<A, Instance> {
     public static String lockName(final String id) {
         return LOCK_PREFIX + id;
     }
+
+    public HazelcastInstance getInstance() {
+        return instance;
+    }
 }

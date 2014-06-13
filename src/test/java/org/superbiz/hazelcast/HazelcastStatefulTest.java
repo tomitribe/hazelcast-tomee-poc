@@ -46,6 +46,7 @@ public class HazelcastStatefulTest {
         return new PropertiesBuilder()
                 .p("statefuls", "new://Container?type=STATEFUL")
                 .p("statefuls.cache", "org.superbiz.hazelcast.HazelcastCache")
+                .p("statefuls.lockFactory", "org.superbiz.hazelcast.HazelcastLockFactory")
                 .p("statefuls.preventExtendedEntityManagerSerialization", "false")
                 .build();
     }
